@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -12,12 +13,14 @@ public class Main {
         int choose = in.nextInt();
         Character character = new Character(name, choose);
         boolean flag = true;
+
         System.out.println("Тест по знанию ООП Java состоит из 10 вопросов, для успешного прохождения требуется решить все 10 вопросов");
         for(int i = 0; i<10; i++) {
             if(character.getHp() < 0) {
                 flag = false;
                 break;
             }
+
         //нужно продумать класс ситуации и вопросы
         }
     }
